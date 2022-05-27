@@ -8,17 +8,17 @@ class MyComponent extends React.Component {
       {
         id: "12312",
         title: "developer",
-        salary: "500$",
+        salary: "500",
       },
       {
         id: "34324",
         title: "tester",
-        salary: "400$",
+        salary: "400",
       },
       {
         id: "45343443",
         title: "projectmanager",
-        salary: "1000$",
+        salary: "1000",
       },
     ],
   };
