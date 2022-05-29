@@ -10,9 +10,9 @@ class ChildComponent extends React.Component {
     });
   };
 
-  handleOnClickDelete = (job) => {
-    console.log(job);
-  };
+  // handleOnClickDelete = (job) => {
+  //   console.log(job);
+  // };
 
   render() {
     const { arrayJobs } = this.props;
