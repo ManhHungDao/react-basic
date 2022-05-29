@@ -1,6 +1,7 @@
 import React from "react";
 import "./ListTodo.scss";
 import AddTodo from "./AddTodo";
+import { toast } from "react-toastify";
 
 class ListTodo extends React.Component {
   state = {
@@ -23,6 +24,7 @@ class ListTodo extends React.Component {
     this.setState({
       listTodos: [...this.state.listTodos, todo],
     });
+    toast.success("Successfully!");
   };
   render() {
     let { listTodos } = this.state;
