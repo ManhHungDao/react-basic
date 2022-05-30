@@ -7,6 +7,7 @@ import Home from "./example/Home";
 import MyComponent from "./example/MyComponent";
 import ListTodo from "./todos/ListTodo";
 import Nav from "./nav/nav";
+import ListUser from "./users/list-user";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route path="/job">
               <MyComponent />
+            </Route>
+            <Route path="/user">
+              <ListUser />
             </Route>
           </Switch>
         </header>

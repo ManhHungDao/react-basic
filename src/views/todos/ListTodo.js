@@ -2,7 +2,6 @@ import React from "react";
 import "./ListTodo.scss";
 import AddTodo from "./AddTodo";
 import { toast } from "react-toastify";
-import { toHaveFocus } from "@testing-library/jest-dom/dist/matchers";
 
 class ListTodo extends React.Component {
   state = {
