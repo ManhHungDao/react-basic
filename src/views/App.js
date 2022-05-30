@@ -8,7 +8,7 @@ import MyComponent from "./example/MyComponent";
 import ListTodo from "./todos/ListTodo";
 import Nav from "./nav/nav";
 import ListUser from "./users/list-user";
-
+import DetailUser from "./users/detail-user";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -28,8 +28,11 @@ function App() {
             <Route path="/job">
               <MyComponent />
             </Route>
-            <Route path="/user">
+            <Route path="/user" exact>
               <ListUser />
+            </Route>
+            <Route path="/user/:id">
+              <DetailUser />
             </Route>
           </Switch>
         </header>
